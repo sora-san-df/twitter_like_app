@@ -1,0 +1,76 @@
+:root{
+  --cursor: pointer; 
+  --boton-width: 50px;
+  --boton-height: 25px;
+  --button-color: #fff;
+  --button-backgroundColor: #000;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.figure_profileImg{
+  display:inline-block;
+  width: 100px;
+  height: 100px;
+}
+
+.profileImg{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+  
+.lista {
+  display: flex;
+  /* si los botones no se acomodan como en el boceto cuando este dentro de un contenedor pdre, cambiar a space-around */
+  justify-content: space-between;
+  list-style: none;
+    
+}
+  
+.textArea {
+  resize: none;
+  width: 84%;
+  height: 100px;
+  outline: none;
+}
+  
+.buttons{
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  
+ }
+ .uploadImg{
+   cursor: var(--cursor);
+   width: var(--boton-width);
+   height: var(--boton-height);
+   border-radius: 10px;
+   border: none;
+   color: var(--button-color);
+   background-color: var(--button-backgroundColor);
+ }
+ .deletePost{
+  cursor: var(--cursor);
+  width: var(--boton-width);
+  height: var(--boton-height);
+  border-radius: 10px;
+  border: none;
+  color: var(--button-color);
+   background-color: var(--button-backgroundColor);
+ }
+
+ .submitButton{
+  width: 80px;
+  height: 25px;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  background-color: #000;
+  cursor: var(--cursor);
+ }

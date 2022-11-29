@@ -1,8 +1,12 @@
 import {PublishArt} from './components/publishArt'
+import './app.module.css'
 function App() {
 
   return (
-    <PublishArt/>
+    <div>
+      <PublishArt/>
+
+    </div>
   )
 }
 

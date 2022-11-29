@@ -1,24 +1,42 @@
 //Component that will allows us to make a publication. 
 import React from "react";
+import {RiImageAddFill} from 'react-icons/ri'
+import {RiDeleteBin6Line} from 'react-icons/ri'
+import styles from './styles.module.css'
 
 function PublishArt(){
+  
    return(
-    <div className="publishArt">
-        <form className="content">
-        <img src="image.png" alt="profile image" />
-        <textarea className="content" name="publishART" id="" cols="30" rows="10"></textarea>
-        </form>
+      <form className={styles.myForm}>
+        <figure className={styles.figure_profileImg}>
+        <img
+          className={styles.profileImg}
+          src="https://i.pinimg.com/736x/19/ce/2f/19ce2fd87c741b5725cc5c74e71ea028.jpg"
+          alt="Profile Image"
+        />
+        </figure>
+        <textarea
+          className={styles.textArea}
+          placeholder="write some dumb text"
+        ></textarea>
         <div>
-        <ul className="buttons">
-            <li>Boton 1</li>
-            <li>Boton 2</li>
-            <button type="submit">heheh</button>
-        </ul>
-
+          <ul className={styles.lista}>
+            <div className={styles.buttons}>
+            <li>
+              <button className={styles.uploadImg}>
+                <RiImageAddFill/>
+              </button>
+            </li>
+            <li>
+              <button className={styles.deletePost}>
+                <RiDeleteBin6Line/>
+              </button>
+            </li>
+            </div>
+            <button className={styles.submitButton}type="submit">Post</button>
+          </ul>
         </div>
-       
-        
-    </div>
+      </form>
    )
 }
 
