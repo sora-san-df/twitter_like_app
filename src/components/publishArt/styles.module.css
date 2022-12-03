@@ -12,11 +12,14 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+.myForm{
+  margin-top: 15px;
+}
 .figure_profileImg{
   display:inline-block;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
+  margin-right: 8px;
 }
 
 .profileImg{
@@ -28,22 +31,30 @@
 .lista {
   display: flex;
   /* si los botones no se acomodan como en el boceto cuando este dentro de un contenedor pdre, cambiar a space-around */
-  justify-content: space-between;
+  justify-content: space-around;
   list-style: none;
+  width: 75vw;
+  margin-top: 10px;
+
     
 }
   
 .textArea {
   resize: none;
   width: 84%;
-  height: 100px;
+  height: 87px;
   outline: none;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid #959595;
 }
+
   
 .buttons{
   width: 120px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-left: -150px;
   
  }
  .uploadImg{
@@ -65,7 +76,7 @@
    background-color: var(--button-backgroundColor);
  }
 
- .submitButton{
+ .submitInput{
   width: 80px;
   height: 25px;
   border-radius: 10px;
@@ -73,4 +84,5 @@
   color: white;
   background-color: #000;
   cursor: var(--cursor);
+  
  }

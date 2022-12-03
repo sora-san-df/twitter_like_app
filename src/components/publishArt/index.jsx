@@ -5,9 +5,13 @@ import {RiDeleteBin6Line} from 'react-icons/ri'
 import styles from './styles.module.css'
 
 function PublishArt(){
-  
+
+  const submitFunc = (e)=>{
+    e.preventDefault()
+    console.log(e.target.content.value);
+  }
    return(
-      <form className={styles.myForm}>
+      <form className={styles.myForm} onSubmit={submitFunc}>
         <figure className={styles.figure_profileImg}>
         <img
           className={styles.profileImg}
@@ -18,12 +22,13 @@ function PublishArt(){
         <textarea
           className={styles.textArea}
           placeholder="write some dumb text"
+          name="content"
         ></textarea>
         <div>
           <ul className={styles.lista}>
             <div className={styles.buttons}>
             <li>
-              <button className={styles.uploadImg}>
+              <button  className={styles.uploadImg}>
                 <RiImageAddFill/>
               </button>
             </li>
@@ -33,7 +38,8 @@ function PublishArt(){
               </button>
             </li>
             </div>
-            <button className={styles.submitButton}type="submit">Post</button>
+            
+            <input type="submit" value="Post"   className={styles.submitInput}/>
           </ul>
         </div>
       </form>

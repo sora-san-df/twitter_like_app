@@ -1,0 +1,7 @@
+.RigthInfo{
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    border: 1px solid #959595;
+    width: 255px;
+}
