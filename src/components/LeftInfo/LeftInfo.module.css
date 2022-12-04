@@ -4,4 +4,27 @@
     height: 100vh;
     border: 1px solid #959595;
     width: 255px;
+    font-size: 18px;
+   
+}
+.Logo{
+    font-size: 32px;
+}
+
+.LeftInfo__options{
+    list-style: none;
+    position: relative;
+    top: 180px;
+}
+.LeftInfo__options li{
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.LogOut{
+    position: absolute;
+    bottom: 80px;
+    left: 95px;
+    cursor: pointer;
+    
 }

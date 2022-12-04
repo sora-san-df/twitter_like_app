@@ -1,14 +1,14 @@
 import styles from './LeftInfo.module.css'
+import {RiBrushFill} from 'react-icons/ri'
 function LeftInfo(){
     return(
         <div className={styles.LeftInfo}>
-            <h1>PostArt</h1>
-            <ul>
-                <li>Descubrir</li>
-                <li>Configuracion</li>
-                <li>Cuentas recomendadas</li>
+           <RiBrushFill className={styles.Logo}/>
+            <ul className={styles.LeftInfo__options}>
+                <li># Descubrir</li>
+                <li># Configuracion</li>
             </ul>
-            <p>Logout</p>
+            <div className={styles.LogOut}>Log out</div>
         </div>
     )
 }

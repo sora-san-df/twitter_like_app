@@ -2,7 +2,7 @@ import { PublishArt } from '../publishArt';
 import styles from './TimeLine.module.css';
 import {LeftInfo} from '../LeftInfo';
 import {RigthInfo} from '../RigthInfo';
-// import {PostArt} from '../PostArt'
+import {PostArt} from '../PostArt'
 
 function TimeLine (){
 
@@ -15,7 +15,7 @@ function TimeLine (){
             <PublishArt/>
             {/* //linea divisora de publish art y los post  */}
             <div className={styles.divisorLine}></div>
-            {/* <PostArt/> */}
+            <PostArt/>
         </div>
 
      )
