@@ -1,25 +1,54 @@
 .PostContainer{
-    width: 100%;
-    height: 400px;
+    width: 748px;
+    height: 480px;
+    margin: 0 auto;
+
+}
+.PostContainer p{
+    margin-bottom: 18px;
+    position: relative;
+    left: -200px
+
 }
 
 .profileHeader{
     display: flex;
     justify-content: flex-start;
-}
+    align-items: center;
+    margin-bottom: 36px;
 
+}
+.profileHeader__profileImg{
+    width: 80px;
+    height: 80px;
+}
+.profileHeader__profileImg img{
+        position: relative;
+        left: 16px;
+        top: 8px;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+    
 .profileHeader p{
     position: relative;
     left: 20px;
+    
 }
+
 
 .postActions{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     list-style: none;
+    cursor: pointer;
+    margin-top: 14px;
+
 }
 
-.postImages{
-    width: 100%;
-    height: 100%;
+.postImage{
+    border-radius: 10px;
+    /* width: 100%;
+    height: 100%; */
 }
