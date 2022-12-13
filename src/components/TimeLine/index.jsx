@@ -23,6 +23,7 @@ import {MyPost} from '../MyPost'
     }
     
     const value = getFromLocalStorage("Posts")
+
      return(
          <div className={styles.container}>
             <LeftInfo/>
@@ -31,16 +32,15 @@ import {MyPost} from '../MyPost'
             {/* //linea divisora de publish art y los post  */}
             <div className={styles.divisorLine}></div>
             {/* My post  */}
-            {<p>{value.username}</p>}
-            <MyPost
-            username={value.username}
-            name={value.name}
-            numImg={455}
-            click={clickMe}
-
-            >
-                <p>{value.post}</p>
-            </MyPost>
+            
+            {value &&
+                value.map(data=>
+                    <MyPost username={data.username} name={data.name} numImg={413} click={clickMe}>
+                        {data.post}
+                    </MyPost>
+                )
+            
+            }
 
             <PostArt nombre={'juano'} numImg={401} click={clickMe}/>
             <PostArt nombre={'carlitos'} numImg={402} click={clickMe}/>
