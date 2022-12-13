@@ -3,12 +3,21 @@ import React from "react";
 import {RiImageAddFill} from 'react-icons/ri'
 import {RiDeleteBin6Line} from 'react-icons/ri'
 import styles from './styles.module.css'
+import { saveInLocalStorage } from "../../utilities/saveInLocalStorage";
 
 function PublishArt(){
 
   const submitFunc = (e)=>{
     e.preventDefault()
     console.log(e.target.content.value);
+    const content = e.target.content.value
+    const user = {
+      post: content,
+      username: 'cloudoKun',
+      name: 'Diego'
+    }
+
+    saveInLocalStorage("Posts", user)
   }
    return(
       <form className={styles.myForm} onSubmit={submitFunc}>

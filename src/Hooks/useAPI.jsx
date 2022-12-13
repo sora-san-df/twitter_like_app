@@ -1,11 +1,4 @@
-import {useEffect} from 'react'
-
-function useAPI(url){
-    useEffect((url) => {
-      fetch()
-    }, [])
-    
+export function useAPI (){
+  return fetch(import.meta.env.VITE_API)
+    .then(data => data.json())
 }
-
-return {useAPI}
-
