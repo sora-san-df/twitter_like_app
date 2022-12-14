@@ -1,14 +1,14 @@
 import styles from './PostArt.module.css';
 import {generateUsername} from 'unique-username-generator';
 import {FaHeart} from 'react-icons/fa';
-import {GrSave} from 'react-icons/gr';
+import {MdSaveAlt} from 'react-icons/md';
 import {BiRepost} from 'react-icons/bi';
 import {useAPI} from '../../Hooks/useAPI'
 import { useState,useEffect } from 'react';
 
 
 
-function PostArt({nombre, numImg, click}){
+function PostArt({nombre, numImg, click, like}){
     const userName = generateUsername()
     const [cuotas, setCuotas] = useState([]);
 
@@ -50,8 +50,8 @@ function PostArt({nombre, numImg, click}){
     
                     <img className={styles.postImage}src={`https://picsum.photos/728/${numImg}`} alt="Post" />
                     <ul className={styles.postActions}>
-                        <li className={styles.Like} onClick={click} id="test"><FaHeart/></li>
-                        <li className={styles.Save}><GrSave/></li>
+                        <li className={styles.Like} onClick={click} id="test"><FaHeart/>{like}</li>
+                        <li className={styles.Save}><MdSaveAlt/></li>
                         <li className={styles.Repost}><BiRepost/></li>
                     </ul>
                 </div>

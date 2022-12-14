@@ -1,10 +1,13 @@
 import styles from './myPost.module.css'
 import {FaHeart} from 'react-icons/fa';
-import {GrSave} from 'react-icons/gr';
+import {MdSaveAlt} from 'react-icons/md';
 import {BiRepost} from 'react-icons/bi';
-import {useAPI} from '../../Hooks/useAPI'
 
-function MyPost({username, name,numImg,click,children}){
+
+
+function MyPost({username, name,numImg,click,like,children}){
+
+   
     return(
         <div className={styles.Container}>
         {/* div for the prof image and username */}
@@ -29,8 +32,8 @@ function MyPost({username, name,numImg,click,children}){
 
             <img className={styles.postImage}src={`https://picsum.photos/728/${numImg}`} alt="Post" />
             <ul className={styles.postActions}>
-                <li className={styles.Like} onClick={click} id="test"><FaHeart/></li>
-                <li className={styles.Save}><GrSave/></li>
+                <li className={styles.Like} onClick={click} id="test"><FaHeart/>{ like }</li>
+                <li className={styles.Save}><MdSaveAlt/></li>
                 <li className={styles.Repost}><BiRepost/></li>
             </ul>
         </div>

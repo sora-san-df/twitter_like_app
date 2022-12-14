@@ -2,13 +2,15 @@
     position: absolute;
     left: 0;
     height: 100vh;
-    border: 1px solid #959595;
+    /* border: 1px solid #959595; */
     width: 255px;
     font-size: 20px;
-   
+    color: white;
+    background-color: #0d1629;
 }
 .Logo{
     font-size: 40px;
+    color: #1e57ce
 }
 
 .LeftInfo__options{
@@ -26,5 +28,9 @@
     bottom: 80px;
     left: 95px;
     cursor: pointer;
+    background-color: #052058;
+    width: 132px;
+    border-radius: 10px;
+    padding: 4px;
     
 }

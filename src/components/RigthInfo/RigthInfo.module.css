@@ -2,10 +2,49 @@
     position: absolute;
     right: 0;
     height: 100vh;
-    border: 1px solid #959595;
+    /* border: 1px solid #959595; */
     width: 255px;
+    color:white;
+    background-color: #020d24;
+    margin-top: 16px;
+    margin-right: 20px;
+    border-radius: 14px;
+    padding: 10px;
 }
 
 .RigthInfo__Title{
-    font-size: 20px;
+    font-size: 5px;
+}
+
+.ImgCont{
+    width: 44px;
+    height: 44px;
+}
+
+.ImgCont img{
+    width: 100%;
+    height: 100%; 
+    border-radius: 100%;
+}
+.listContParent{
+    margin-top: 24px;
+    
+    
+}
+
+.listCont{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10px;
+    border-bottom:1px solid rgb(88, 88, 88); 
+    padding: 10px;
+}
+
+.ShowMore{
+    position: absolute;
+    bottom: 0;
+    color:#1e57ce;
+    font-size: 18px;
+    cursor: pointer;
 }

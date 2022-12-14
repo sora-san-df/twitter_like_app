@@ -4,9 +4,10 @@
     /* height: 100vw; */
     margin: 0 auto;
     text-align: center;
+    background-color: #0d1629;
 }
 
 .divisorLine{
-    border-bottom: 1px solid #959595;
+    border-bottom: 12px solid #4b4b4b;
     margin-top: 24px;
 }

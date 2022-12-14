@@ -10,7 +10,11 @@ import {MyPost} from '../MyPost'
 
  function TimeLine (){
     const [color, setColor]= useState(1)
+    const[like, setALike] = useState(0)
     const clickMe = ()=>{
+
+        //numero de likes
+        setALike(like + 1)
         //logica para cambiar los colores de los likes.
        if(color==0){
         document.getElementById('test').style.color='red'
@@ -21,6 +25,8 @@ import {MyPost} from '../MyPost'
            setColor(0)
        }
     }
+
+   
     
     const value = getFromLocalStorage("Posts")
 
@@ -35,14 +41,14 @@ import {MyPost} from '../MyPost'
             
             {value &&
                 value.map(data=>
-                    <MyPost username={data.username} name={data.name} numImg={413} click={clickMe}>
+                    <MyPost username={data.username} name={data.name} numImg={413} click={clickMe} like={like}>
                         {data.post}
                     </MyPost>
                 )
             
             }
 
-            <PostArt nombre={'juano'} numImg={401} click={clickMe}/>
+            <PostArt nombre={'juano'} numImg={401} click={clickMe} like={like}/>
             <PostArt nombre={'carlitos'} numImg={402} click={clickMe}/>
             <PostArt nombre={'tuki'} numImg={403} click={clickMe}/>
             <PostArt nombre={'josé'} numImg={404} click={clickMe}/>

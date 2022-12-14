@@ -1,10 +1,10 @@
-import {PublishArt} from './components/publishArt';
+
 import { TimeLine } from './components/TimeLine';
-import './app.module.css'
+import styles from './app.module.css'
 function App() {
 
   return (
-    <div >
+    <div className={styles.LeRate} >
       
       <TimeLine/>
       {/* <PublishArt/> */}
